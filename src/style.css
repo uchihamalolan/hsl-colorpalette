@@ -12,12 +12,11 @@ ul, li {
     list-style-type: none;
 }
 .color-boxes {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    place-items: center;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    width: fit-content;
+    justify-content: center;
+    align-items: center;
 }
 .color-box-list {
     display: grid;
