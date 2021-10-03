@@ -1,5 +1,8 @@
 body {
-    margin: 8rem 16rem;
+    display: grid;
+    place-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 li {
     display: flex;
@@ -15,8 +18,8 @@ ul, li {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
     align-items: center;
+    width: 80vw;
 }
 .color-box-list {
     display: grid;
@@ -35,5 +38,5 @@ ul, li {
     font-family: 'Courier New', Courier, monospace;
 }
 [role="tooltip"]:after {
-    transform: translate(-3rem, -2rem)!important;
+    transform: translate(-30%, -110%)!important;
 }
