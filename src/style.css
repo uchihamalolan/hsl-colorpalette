@@ -1,0 +1,40 @@
+body {
+    margin: 8rem 16rem;
+}
+li {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.color-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    gap: 2rem;
+    width: fit-content;
+}
+.color-box-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    outline: 1px solid #eee;
+}
+.color-box {
+    width: 36px;
+    aspect-ratio: 1;
+}
+[role="tooltip"] {
+    font-family: 'Courier New', Courier, monospace;
+}
+[role="tooltip"]:after {
+    transform: translate(-3rem, -2rem)!important;
+}
