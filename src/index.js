@@ -86,6 +86,14 @@ const colorPalette = {
 const colorBoxesElement = document.getElementsByClassName('color-boxes')[0]
 
 Object.entries(colorPalette).forEach(([color, colorRange]) => {
+
+  const colorBoxContainer = document.createElement('div');
+  colorBoxContainer.classList.add('colorbox-container');
+
+  const colorBoxTitle = document.createElement('h4');
+  colorBoxTitle.textContent = color;
+  colorBoxTitle.classList.add('color-box-title');
+
   const colorBox = document.createElement('div');
   colorBox.classList.add('color-box-list')
   colorRange.forEach((colorRangeItem, index) => {
@@ -94,5 +102,8 @@ Object.entries(colorPalette).forEach(([color, colorRange]) => {
     colorBox.appendChild(colorEle1)
     colorBox.appendChild(colorEle2)
   })
-  colorBoxesElement.appendChild(colorBox);
+
+  colorBoxContainer.appendChild(colorBoxTitle);
+  colorBoxContainer.appendChild(colorBox);
+  colorBoxesElement.appendChild(colorBoxContainer);
 })

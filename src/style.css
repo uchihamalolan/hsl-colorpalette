@@ -14,12 +14,13 @@ ul, li {
     padding: 0;
     list-style-type: none;
 }
+
 .color-boxes {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     align-items: center;
-    width: 80vw;
+    width: 75vw;
 }
 .color-box-list {
     display: grid;
@@ -34,6 +35,13 @@ ul, li {
     width: 36px;
     aspect-ratio: 1;
 }
+.color-box-title {
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0.5rem;
+}
+
 [role="tooltip"] {
     font-family: 'Courier New', Courier, monospace;
 }
