@@ -13,6 +13,8 @@
     --purple-hue: 265;
     --magenta-hue: 327;
 
+    --hue-step: 2;
+
     /* BLUE */
     --blue-1: hsl(var(--blue-hue), 100%, 95%);
     --blue-2: hsl(var(--blue-hue), 100%, 86%);
